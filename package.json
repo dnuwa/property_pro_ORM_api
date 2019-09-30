@@ -1,0 +1,39 @@
+{
+  "name": "property_pro_ORM_api",
+  "version": "1.0.0",
+  "description": "Property Pro Lite is a platform where people can create and/or search properties for sale or rent.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.js --exec babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnuwa/property_pro_ORM_api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnuwa/property_pro_ORM_api/issues"
+  },
+  "homepage": "https://github.com/dnuwa/property_pro_ORM_api#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.18.4",
+    "sequelize-cli": "^5.5.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "nodemon": "^1.19.2"
+  }
+}
