@@ -1,9 +1,9 @@
-import express, { json} from 'express';
-import morgan from 'morgan'
+import express, { json } from 'express';
+import morgan from 'morgan';
 
 // importing routes
-import authRoutes from './routes/auth';
-import advertRoutes from './routes/adverts';
+import authRouter from './server/routes/auth';
+import advertRoutes from './server/routes/adverts';
 
 // initialisation
 const app = express();
@@ -13,8 +13,14 @@ app.use(morgan('dev'));
 app.use(json());
 
 // routes
-app.use('/api/v1/auth',authRoutes);
-app.use('/api/v1/adverts',advertRoutes);
+app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/adverts', advertRoutes);
 
+app.get('/', (req, res) => {
+  res.status(200).send({
+    status: 200,
+    message: 'Welcome to the property_pro_lite API'
+  });
+});
 
 export default app;
