@@ -8,8 +8,12 @@ first time clone
 create a `.env` file and add the content below
 
 ````
-DATABASE_URL='postgres://postgres:1234567890@127.0.0.1:5432/property_pro'
-SECRET = 'secret'
+PORT=8000
+DEV_DB_NAME='property_pro'
+DEV_DB_USER='postgres'
+DEV_DB_PASS=1234567890
+DEV_DB_HOST='127.0.0.1'
+SECRET=supersecret
 ````
 create a database and run the command below
 
