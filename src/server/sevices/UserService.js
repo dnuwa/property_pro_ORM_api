@@ -6,6 +6,7 @@ class UserService{
         try{
             return await db.User.create(newUser);
         } catch (error){
+            // console.log(error)
             throw error; 
         }       
     }

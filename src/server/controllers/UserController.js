@@ -5,7 +5,7 @@ const util = new Util();
 
 class UserContorller{
     static async addUser(req, res){
-        if (!req.body.first_name || !req.body.last_name || !req.body.password) {
+        if (!req.body.firstName || !req.body.lastName || !req.body.password || !req.body.phoneNumber || !req.body.address || !req.body.isAdmin) {
             util.setError(400, 'Please provide complete details');
             return util.send(res);
           }
