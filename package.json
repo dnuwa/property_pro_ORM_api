@@ -25,15 +25,18 @@
   "homepage": "https://github.com/dnuwa/property_pro_ORM_api#readme",
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
     "path": "^0.12.7",
     "pg": "^7.18.2",
     "pg-hstore": "^2.3.3",
     "sequelize": "^5.21.6",
-    "sequelize-cli": "^5.5.1"
+    "sequelize-cli": "^5.5.1",
+    "uuid": "^8.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",

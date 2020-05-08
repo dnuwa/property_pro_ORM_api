@@ -39,3 +39,8 @@ or
 or
 
 `npx sequelize-cli db:migrate`
+
+adding new fields to a table
+````
+npx sequelize-cli migration:create --name modify_users_add_new_fields
+````
