@@ -1,11 +1,12 @@
 # property_pro_ORM_api
 Property Pro Lite is a platform where people can create and/or search properties for sale or rent.
 
+[![GitHub license](https://img.shields.io/github/license/dnuwa/property_pro_ORM_api)](https://github.com/dnuwa/property_pro_ORM_api/blob/develop/LICENSE)               [![GitHub stars](https://img.shields.io/github/stars/dnuwa/property_pro_ORM_api)](https://github.com/dnuwa/property_pro_ORM_api/stargazers)             [![GitHub forks](https://img.shields.io/github/forks/dnuwa/property_pro_ORM_api)](https://github.com/dnuwa/property_pro_ORM_api/network)                [![GitHub issues](https://img.shields.io/github/issues/dnuwa/property_pro_ORM_api)](https://github.com/dnuwa/property_pro_ORM_api/issues)           [![Build Status](https://dev.azure.com/danielnuwa/danielnuwa/_apis/build/status/dnuwa.property_pro_ORM_api?branchName=develop)](https://dev.azure.com/danielnuwa/danielnuwa/_build/latest?definitionId=1&branchName=develop)
 #### 
 
-first time clone 
+First time clone 
 
-create a `.env` file and add the content below
+Create a `.env` file and add the content below
 
 ````
 PORT=8000
@@ -25,7 +26,7 @@ undo a migration
 
 
 
-#### generating migration files
+#### Generating migration files
 
 `node_modules/.bin/sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string`
 
@@ -33,7 +34,7 @@ or
 
 `npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string`
 
-#### runing migrations
+#### Runing migrations
 `node_modules/.bin/sequelize-cli db:migrate`
 
 or
