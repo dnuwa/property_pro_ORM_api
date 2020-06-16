@@ -1,5 +1,6 @@
 import express, { json } from 'express';
 import morgan from 'morgan';
+import Cors from 'cors';
 
 // importing routes
 import authRouter from './server/routes/auth';
@@ -9,6 +10,7 @@ import propertyRouter from './server/routes/property';
 const app = express();
 
 // middlewares
+app.use(Cors());
 app.use(morgan('dev'));
 app.use(json());
 
